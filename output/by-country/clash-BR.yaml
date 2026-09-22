@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇩 MD 01 - xiaohe
+- name: 🇧🇷 BR 01 - xiaohe
   type: vless
-  server: 185.153.198.86
+  server: 35.199.90.53
   port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  uuid: e9c2ed7f-79ab-40a8-8910-24468f5da712
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shuma.ccwu.cc
+  reality-opts:
+    public-key: 0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇩 MD 01 - xiaohe
+  - 🇧🇷 BR 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇩 MD 01 - xiaohe
+  - 🇧🇷 BR 01 - xiaohe
 rules:
 - MATCH,PROXIES
