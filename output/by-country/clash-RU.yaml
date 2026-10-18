@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: ss
-  server: 130.49.189.158
-  port: 43558
+  server: 90.156.203.62
+  port: 5112
   cipher: chacha20-ietf-poly1305
-  password: MYkM/b5ww6KhyHjBKB6OZifqzcXEnDT2jDIBWywYAws=
+  password: VVlAff77CnAU43Aoc5j15Y
   udp: true
 proxy-groups:
 - name: PROXIES
