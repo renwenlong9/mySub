@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 46.243.232.149
+  server: 188.225.56.100
   port: 443
   uuid: b432a23a-acff-425c-bf69-70480cd6ed09
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: devcdn.icu
+  servername: e2.cdnwh.icu
   network: ws
   ws-opts:
-    path: /edge/chunk/b2265efffa29/
+    path: /stream/segment/3078a41dd7eb/
     headers:
-      Host: devcdn.icu
+      Host: e2.cdnwh.icu
 proxy-groups:
 - name: PROXIES
   type: select
